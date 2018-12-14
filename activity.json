@@ -1,0 +1,27 @@
+{
+    "name": "flogo-javascript",
+    "type": "flogo:activity",
+    "ref": "github.com/vijaynalawade/flogo/activity/js",
+    "version": "0.0.1",
+    "title": "JavaScript Activity",
+    "description": "Run embedded JavaScript code",
+    "homepage": "https://github.com/vijaynalawade/flogo/tree/master/activity/js",
+    "inputs":[
+      {
+        "name": "jsInput",
+        "type": "any"
+      },
+      {
+        "name": "jsCode",
+        "type": "string",
+        "required": true
+      }
+    ],
+    "outputs": [
+      {
+        "name": "jsOutput",
+        "type": "any"
+      }
+    ]
+  }
+  
