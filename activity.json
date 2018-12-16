@@ -1,11 +1,11 @@
 {
     "name": "flogo-javascript",
     "type": "flogo:activity",
-    "ref": "github.com/vijaynalawade/flogo/activity/js",
+    "ref": "github.com/kabukky/flogojs",
     "version": "0.0.1",
-    "title": "JavaScript Activity",
+    "title": "JavaScript Activity Kabukky",
     "description": "Run embedded JavaScript code",
-    "homepage": "https://github.com/vijaynalawade/flogo/tree/master/activity/js",
+    "homepage": "https://github.com/kabukky/flogojs",
     "inputs":[
       {
         "name": "jsInput",
