@@ -36,7 +36,7 @@ func (a *JSActivity) Eval(context activity.Context) (done bool, err error) {
 	inputVars, _ := context.GetInput(ivInputVars).(interface{})
 	jsCode, _ := context.GetInput(ivJs).(string)
 
-	activityLog.Debugf("JavaScript Input: +%v", inputVars)
+	activityLog.Debugf("JavaScript Input: %#v", inputVars)
 	activityLog.Debugf("JavaScript Code: %s", jsCode)
 
 	vm := otto.New()
@@ -61,6 +61,6 @@ func (a *JSActivity) Eval(context activity.Context) (done bool, err error) {
 	}
 	context.SetOutput(ovOutput, jsOutput)
 
-	activityLog.Debugf("JavaScript Output: +%v", jsOutput)
+	activityLog.Debugf("JavaScript Output: %#v", jsOutput)
 	return true, nil
 }
